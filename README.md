@@ -1,6 +1,6 @@
 # Simple Full Stack Maze Solver
 
-An almost full stack maze solver written entirely in javascript and html.
+A maze solver written entirely in javascript and html.
 
 Utilizes npm, node.js, express, AngularJS
 
@@ -34,7 +34,7 @@ The maze in converted into an undirected graph.
 
 Simple BFS is used to calculate the route. Given more time I would have optimized the graph to elmininate connections that are in "straight lines" with a single edge and weight replacing the steps and then using A* or Dijstrka.
 
-#Frontend
+# Frontend
 
 The front end is a crude text area for input, a button form submission and a table for the maze display.
 
