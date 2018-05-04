@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="mazeSolverApp">
+
+<head>
+    <title>Maze Solver</title>
+    <script src="js/angular.js"></script>
+    <script src="js/mazesolver.js"></script>
+</head>
+<link rel="stylesheet" type="text/css" href="css/maze.css">
+<body>
+    <h2>Maze Solver</h2>
+    <div ng-controller="MazeSolverController as mazeSolver">
+        <textarea ng-model="mazeSolver.mazeText" placeholder=""></textarea>
+        <button ng-click="mazeSolver.displayMaze();mazeSolver.solveMaze()">
+            Solve Maze
+        </button>
+        <button ng-click="mazeSolver.displayMaze()">
+                Display Maze
+        </button>
+        <br>
+        Steps: {{mazeSolver.steps}}
+        <br>
+        <table border="0" cellspacing="0" cellpadding="0">
+            <tr ng-repeat="row in mazeSolver.maze track by $index">
+                <td ng-repeat="col in row track by $index" ng-class="{ 'wall' : col === '#', 'empty' : col === '.', 'route' : col === 'X', 'start' : col === 'A', 'end' : col === 'B'   }">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

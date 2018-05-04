@@ -1,0 +1,30 @@
+.route {
+    width: 2px;
+    height: 2px;
+    margin: 1;
+    background: green;
+}
+.wall {
+    width: 4px;
+    height: 4px;
+    margin: 0;
+    background: blue;
+}
+.empty {
+    width: 4px;
+    height: 4px;
+    margin: 0;
+    background: white;
+}
+.start {
+    width: 4px;
+    height: 4px;
+    margin: 0;
+    background: red;
+}
+.end {
+    width: 4px;
+    height: 4px;
+    margin: 0;
+    background: teal;
+}
